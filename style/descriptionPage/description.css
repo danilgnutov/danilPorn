@@ -1,0 +1,66 @@
+.welcome{
+    background-image: url("https://img2.goodfon.ru/original/1400x1050/6/31/grud-soski-siski.jpg");
+    min-height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome .welcome-content{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome .welcome-content .welcome-title h1{
+    font-size: 50px;
+    color: white;
+    font-family: Roboto;
+}
+
+.welcome .welcome-content .welcome-button{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.welcome .welcome-content .welcome-button a{
+    color: white;
+    font-family: Roboto;
+    font-size: 14px;
+    border: 3px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.welcome .welcome-content .welcome-button a:hover{
+    color:rgb(153, 26, 26);
+    border-color: rgb(153, 26, 26);;
+}
+
+.welcome .dots{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+
+.welcome .dots .dot{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: all 0.5s;
+}
+
+.welcome .dots .dot:hover{
+    background: grey;
+    cursor: pointer;
+}

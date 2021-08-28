@@ -1,0 +1,182 @@
+body{
+    background-color: #4d4a4a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#blured{
+    transition: all 0.2s;
+}
+
+h1{
+    text-align: center;
+    margin: 30px;
+    font-family: Roboto;
+    color: white;
+}
+
+.pornVideo{
+    width: 80%;
+    min-height: 30%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.modalWindow{
+    position: absolute;
+    background-color: gray;
+    padding: 10px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    animation: modalWindowShow 0.4s;
+}
+
+.modalWindowTitle{
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.modalWindowDescription{
+    font-family: Roboto;
+    margin-top: 3px;
+}
+
+.modalWindowContent{
+    display: flex;
+    
+}
+
+@keyframes modalWindowShow {
+    from{
+        width: 0;
+        height: 0;
+    }
+    to{
+        transform: rotate(360deg);
+        width: 70%;
+        min-height: 70%;
+    }
+}
+
+header{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+header  a{
+    color: #FBF37C;
+}
+
+.header-links{
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-links a{
+    margin-right: 15px;
+    transition: all 0.5s;
+    color: white;
+}
+
+header .header-logo{
+    font-family: 'Allison', cursive;
+    font-size: 65px;
+    font-weight: bolder;
+}
+
+header .header-logo a{
+    transition: all 0.5s;
+    color: white;
+}
+
+
+header .header-logo a:hover{
+    color:rgb(153, 26, 26);
+}
+
+.header-links a:hover{
+    color: rgb(153, 26, 26);
+}
+
+.categories{
+    margin: 10px 10px;
+    font-family: Roboto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categorie{
+    transition: all 0.5s;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 10rem;
+    background-color: #202020;
+    color: white;
+    box-shadow: 10px 10px 20px 0.5px rgb(0, 0, 0);
+}
+
+.categorie:hover{
+    cursor: pointer;
+    background-color: #3f3d41;
+}
+
+.categorie-name{
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.categorie-description{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.categorie-photo img{
+    border-radius: 5px;
+    width: 10rem;
+    height: 10rem;
+}
+
+.categorie-photo video{
+    border-radius: 5px;
+    width: 10rem;
+    height: 10rem;
+}
+
+.rotate{
+    animation: rotate 0.1s;
+}
+
+.rotationend{
+    animation: rotationend 0.4s;
+}
+
+@keyframes rotate{
+    from{
+    }
+    to{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+}
+
+@keyframes rotationend{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
+}
+

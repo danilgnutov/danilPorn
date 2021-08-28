@@ -1,0 +1,13 @@
+@media (max-width: 600px) {
+    .categorie{
+        width: 60%;
+        text-align: center;
+    }
+    .header-links{
+        opacity: 0;
+    }
+
+    .header-logo{
+        margin-left: 40px;
+    }
+}
